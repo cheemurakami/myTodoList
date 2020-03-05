@@ -1,0 +1,18 @@
+body{
+ background-color: lightblue;
+ text-align: center;
+}
+#regular-list{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    padding: auto;
+}
+.btn{
+    text-align: left;
+    display: inline;
+}
+.list{
+    text-align: left;
+    display: block; 
+}
