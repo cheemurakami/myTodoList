@@ -16,3 +16,9 @@ body{
     text-align: left;
     display: block; 
 }
+#new-list{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    padding: auto;
+}
