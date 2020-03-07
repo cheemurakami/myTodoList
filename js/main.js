@@ -42,6 +42,7 @@ formElement.addEventListener("submit", (event) => {
         spanElement.textContent = ` ${inputElement.value}`; // inputで入れたvalueを入れた
         divElement.classList.add('list'); // divクラス作った
         deleteIconElement.classList.add('fas', 'fa-trash-alt'); //iconクラス作った
+        deleteIconElement.title = 'delete';
         formElement.reset(); //formだけに使える、value入れた後にリセットされて消えるように
     
         newList.appendChild(btnElement);//親を作った後でくっつけた(const newList) 
@@ -60,5 +61,13 @@ formElement.addEventListener("submit", (event) => {
             // });
             btnClickHandler(btnElement, spanElement);
         // console.log(inputElement.value);
+
+        deleteIconElement.addEventListener('click', () => {
+            newList.removeChild(btnElement);
+            newList.removeChild(spanElement);
+            newList.removeChild(deleteIconElement);
+        })
     }
+
+
 });
